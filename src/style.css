@@ -1,0 +1,182 @@
+:root {
+    --brand: #ff2929;
+    --dark: #092032;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    
+}
+  
+  
+  h1, h2, h3 {
+    font-weight: 700 !important;
+    color: #f40000;
+  }
+
+.top-nav {
+    background-color: gray !important;
+    padding-top: 5x;
+    padding-bottom: 5px;
+    color: #090809;
+}
+
+.top-nav p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-left: 16px;
+    color: black;
+}
+
+.top nav img, .top-nav span {
+    vertical-align: middle;
+}
+
+.navbar {
+    box-shadow: var(--shadow);
+    font-family: "Roboto Mono", monospace;
+    position: sticky;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    
+}
+
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.navbar-brand span {
+    font-weight: 700 !important;
+    font-family: "Roboto Mono", monospace;
+    color: red;    
+    background-color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
+#tiimiliikmed {
+    background-color: white;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    color: black;
+
+}
+
+#avaleht {
+    font-family: "Roboto Mono", monospace;
+    background: rgb(255,255,255);
+    background: linear-gradient(349deg, rgba(255,255,255,1) 0%, rgba(131,0,0,1) 0%, rgba(245,0,0,1) 100%);
+    color: black;
+}
+
+#avaleht h1,h2,h3,h4,h5,h6 {
+    font-family: "Roboto Mono", monospace;
+    color: #ff2525;
+}
+
+.div image{
+    height: 50%;
+    width: 50%;
+}
+
+#missioon {
+    background: rgb(255,255,255);
+    background: linear-gradient(349deg, rgba(255,255,255,1) 0%, rgba(131,0,0,1) 0%, rgba(245,0,0,1) 100%);
+    font-family: "Roboto Mono", monospace;
+}   
+
+footer {
+    background: rgb(255,255,255);
+    background: linear-gradient(349deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 0%, rgba(245,0,0,1) 100%) !important;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .footer-top {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer .navbar-brand {
+    color: #fff;
+}
+
+footer p {
+    color: #ADB3B9;
+}
+
+footer .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.logo {
+    position: relative;
+    align-self: center;
+    align-content: center;
+}
+
+#tiimiliikmed h1,h2,h4,h3,h5,h6 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700 !important;
+}
+#avaleht h1,h2,h4,h3,h5,h6 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700 !important;
+    color: black;
+}
+
+#missioon h1,h2,h4,h3,h5,h6 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700 !important;
+    color: black;
+}
