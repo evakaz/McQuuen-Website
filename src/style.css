@@ -6,12 +6,6 @@
     --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
     
 }
-  
-  
-  h1, h2, h3 {
-    font-weight: 700 !important;
-    color: #f40000;
-  }
 
 .top-nav {
     background-color: gray !important;
@@ -96,12 +90,8 @@
     font-family: "Roboto Mono", monospace;
     background: rgb(255,255,255);
     background: linear-gradient(349deg, rgba(255,255,255,1) 0%, rgba(131,0,0,1) 0%, rgba(245,0,0,1) 100%);
-    color: black;
-}
-
-#avaleht h1,h2,h3,h4,h5,h6 {
-    font-family: "Roboto Mono", monospace;
-    color: #ff2525;
+    color: rgb(255, 255, 255);
+    font-size: large;
 }
 
 .div image{
@@ -181,13 +171,20 @@ footer .social-icons a {
    
     /* (B2) CENTER CONTENT */
     display: flex; justify-content: center; align-items: center;
-  }
-   
-  /* (C) ONLY SHOW CAPTION ON HOVER */
-  .fullcap {
-    visibility: none; opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .fullwrap:hover .fullcap {
-    visibility: visible; opacity: 1;
-  }
+}
+
+/* (C) ONLY SHOW CAPTION ON HOVER */
+.fullcap {
+visibility: none; opacity: 0;
+transition: opacity 0.3s;
+}
+.fullwrap:hover .fullcap {
+visibility: visible; opacity: 1;
+}
+
+h6 {
+    color: #fff !important;
+    font-weight: 800 !important;
+    font-size: xx-large !important;
+}
+
