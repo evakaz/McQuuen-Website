@@ -148,6 +148,21 @@ footer .social-icons a {
     align-content: center;
 }
 
+#pildid h1 {
+    color: red !important;
+}
+
+#videod h1 {
+    color: white;
+}
+#uudised h1 {
+    color: red;
+}
+
+#tiimiliikmed {
+    font-size: large;
+}
+
 #tiimiliikmed h1,h2,h4,h3,h5,h6 {
     font-family: "Roboto Mono", monospace;
     font-weight: 700 !important;
@@ -156,6 +171,7 @@ footer .social-icons a {
     font-family: "Roboto Mono", monospace;
     font-weight: 700 !important;
     color: black;
+
 }
 
 #missioon h1,h2,h4,h3,h5,h6 {
@@ -189,13 +205,23 @@ h6 {
     color: #fff !important;
     font-weight: 800 !important;
     font-size: xx-large !important;
+    font-family: "Roboto Mono", monospace;
 }
 
 
-#video {
+#videod {
     background: rgb(255,255,255);
-    background: linear-gradient(349deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 0%, rgba(245,0,0,1) 100%) !important;
+    background: linear-gradient(349deg, rgba(255,255,255,1) 0%, rgba(131,0,0,1) 0%, rgba(245,0,0,1) 100%);
     padding-bottom: 50 !important;
+    font-family: "Roboto Mono", monospace;
+}
+
+#pildid {
+    font-family: "Roboto Mono", monospace;
+}
+
+#uudised {
+    font-family: "Roboto Mono", monospace; 
 }
 
 .lightbox-gallery{background-image: linear-gradient(#f9f9f9, #ffffff);background-repeat: no-repeat;color: #000;overflow-x: hidden}.lightbox-gallery p{color:#fff}.lightbox-gallery h2{font-weight:bold;margin-bottom:40px;padding-top:40px;color:#fff}@media (max-width:767px){.lightbox-gallery h2{margin-bottom:25px;padding-top:25px;font-size:24px}}.lightbox-gallery .intro{font-size:16px;max-width:500px;margin:0 auto 40px}.lightbox-gallery .intro p{margin-bottom:0}.lightbox-gallery .photos{padding-bottom:20px}.lightbox-gallery .item{padding-bottom:30px}
