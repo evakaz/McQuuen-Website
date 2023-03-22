@@ -31,6 +31,7 @@
     background-color: white;
     position: sticky;
     top: 0;
+    font-size: large;
     
 }
 
@@ -94,6 +95,13 @@
     font-size: large;
 }
 
+
+#avaleht h1 {
+
+    color: white;
+    font-weight: 900 !important;
+    font-size: x-large;
+}
 .div image{
     height: 50%;
     width: 50%;
@@ -167,7 +175,7 @@ footer .social-icons a {
     font-family: "Roboto Mono", monospace;
     font-weight: 700 !important;
 }
-#avaleht h1,h2,h4,h3,h5,h6 {
+#avaleht h2,h4,h3,h5,h6 {
     font-family: "Roboto Mono", monospace;
     font-weight: 700 !important;
     color: black;
@@ -225,3 +233,8 @@ h6 {
 }
 
 .lightbox-gallery{background-image: linear-gradient(#f9f9f9, #ffffff);background-repeat: no-repeat;color: #000;overflow-x: hidden}.lightbox-gallery p{color:#fff}.lightbox-gallery h2{font-weight:bold;margin-bottom:40px;padding-top:40px;color:#fff}@media (max-width:767px){.lightbox-gallery h2{margin-bottom:25px;padding-top:25px;font-size:24px}}.lightbox-gallery .intro{font-size:16px;max-width:500px;margin:0 auto 40px}.lightbox-gallery .intro p{margin-bottom:0}.lightbox-gallery .photos{padding-bottom:20px}.lightbox-gallery .item{padding-bottom:30px}
+
+
+.miikael{
+    font-weight: 9000 !important;
+}
