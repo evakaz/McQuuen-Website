@@ -104,6 +104,8 @@
     background: rgb(255,255,255);
     background: linear-gradient(349deg, rgba(255,255,255,1) 0%, rgba(131,0,0,1) 0%, rgba(245,0,0,1) 100%);
     font-family: "Roboto Mono", monospace;
+    color: #fff;
+    font-size: large;
 }   
 
 footer {
@@ -160,6 +162,7 @@ footer .social-icons a {
     font-family: "Roboto Mono", monospace;
     font-weight: 700 !important;
     color: black;
+    font-size: xx-large !important;
 }
    
 /* (B) POSITION CAPTION */
