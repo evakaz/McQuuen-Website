@@ -176,7 +176,7 @@ footer .social-icons a {
     font-family: "Roboto Mono", monospace;
     font-weight: 700 !important;
 }
-#avaleht h2,h4,h3,h5,h6 {
+#avaleht h4,h3,h5,h6 {
     font-family: "Roboto Mono", monospace;
     font-weight: 700 !important;
     color: black;
@@ -377,3 +377,9 @@ h6 {
   #eva:hover + #eva-overlay {
     display: block;
   }
+
+
+#avaleht .h2 {
+font-size:medium !important;
+color: white !important;
+}
