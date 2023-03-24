@@ -29,11 +29,12 @@
     box-shadow: var(--shadow);
     font-family: "Roboto Mono", monospace;
     background-color: white;
-
     font-size: large;
-    position: sticky !important;
-    z-index: 1000 !important;
     
+}
+
+.navbar-toggler-icon {
+  color: black;
 }
 
 .social-icons a {
@@ -378,8 +379,3 @@ h6 {
     display: block;
   }
 
-
-#avaleht .h2 {
-font-size:medium !important;
-color: white !important;
-}
