@@ -26,7 +26,7 @@
         <div class="row justify-content-between">
           <div class="col-auto">
             <p><img src="/img/envelope-regular-24.png" alt="" width="30" height="30"> </p>
-            <p><span>tiim.mcqueen@gmail.com</span></p>
+            <p><span>anne@tiim-mcqueen.eu</span></p>
             <p><img src="/img/building-regular-24.png" alt="" width="30" height="30"></p>
             <p><span> Uus 19, Tallinn</span></p>
           </div>
@@ -43,17 +43,12 @@
     <nav class="navbar navbar-expand-lg bg-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><span><img src="/img/logo_romb.png" height=10% width=10%>Tiim McQueen</span></a>
-        <nav class="mynavbar navbar-light" style="background-color: #3284d7;">
-        <a href="/" class="navbar-brand">
-      </a>
-        <button class="navbar-toggler ml-auto"
-                type="button"
-                data-toggle="collapse"
-                data-target="#nav2">
-            <span class="navbar-toggler-icon">
-          </span>
-        </button>
-      </nav>
+        <nav class="mynavbar navbar-light">
+          <a href="/" class="navbar-brand"></a>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -62,7 +57,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#tiimiliikmed">Tiimiliikmed</a>
             </li>
-        
+    
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#avaleht">Aita meid eesmärgini jõuda!</a>
             </li>
@@ -82,6 +77,22 @@
         </div>
       </div>
     </nav>
+    
+    <script>
+      var navbarCollapse = document.getElementById('navbarSupportedContent');
+      var navbarToggler = document.querySelector('.navbar-toggler');
+    
+      navbarToggler.addEventListener('click', function() {
+        if (navbarCollapse.style.display === 'block') {
+          navbarCollapse.style.display = 'none';
+        } else {
+          navbarCollapse.style.display = 'block';
+        }
+      });
+    </script>
+    
+
+    
     <section id="missioon">
       <div class="container">
         <div class="row justify-content-center">
