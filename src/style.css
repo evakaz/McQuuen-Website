@@ -29,9 +29,10 @@
     box-shadow: var(--shadow);
     font-family: "Roboto Mono", monospace;
     background-color: white;
-    position: sticky;
-    top: 0;
+
     font-size: large;
+    position: sticky !important;
+    z-index: 1000 !important;
     
 }
 
