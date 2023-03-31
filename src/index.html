@@ -16,7 +16,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/logo_romb.png">
-    <script src="/src/translation.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
   </head>
@@ -84,8 +83,9 @@
                 <li><a class="dropdown-item" href="#uudised">Uudised</a></li>
               </ul>
             </li>
-            <button id="toggle-lang">Switch to English</button>
+          
           </ul>
+          <button id="language-toggle">Switch Language</button>
         </div>
       </div>
     </nav>
@@ -110,8 +110,8 @@
                     <div class="col-12">
                       <div class="info-box">
                         <div class="ms-4">
-                          <h1>Teine proovisõit Põhjalas</h1>                  
-                          <p>Vanalinna Hariduskolleegiumi gümnaasiumi taseme tunniplaanist võib leida õppeaine MATIK, mis on lühend matemaatikast, teadusest, tehnoloogiast, inseneri valdkonnast ja kunstist. Lõppeval õppeaastal oli meie eesmärgiks elektriauto ehitamine. Meie juhendajaks oli hispaania päritolu tarkvara insener ja idufirma ettevõtja Javier Ortín Cervera. Allpool klipp meie pühapäevasest proovisõidust Koplis Põhjala tehase angaaris. Elektriauto ehitasid: Eva Kazakovskaia, Evert Härm, Rasmus Tuum, Julius Putrinš, Valter Luus, Paul Kask ja Anne-Riin Peep ning vastasmeeskond Üks Jupp. </p>
+                          <h1 id="teine-proovisoit-pohjalas"></h1>                  
+                          <p id ="teine-proovisoit-tekst"></p>
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/WRla5KKQoS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                       </div>
@@ -130,16 +130,8 @@
                     <div class="col-12">
                         <div class="info-box">
                           <div class="ms-4">
-                              <h5><b>Elekter? Tulevik!</b></h5>
-                              <p>Me oleme innovaatilised gümnasistid Vanalinna Hariduskolleegiumist. Meie tiim ja varasemad gümnasistid ehitasid Greenpower Education Trust raames elektriauto skeletist. 
-  <br>
-  
-  <br>
-                                Meie tiimis on gümnasiste igas vanuses ning kõigi panus aitas luua auto, millega me oma esimese proovisõidu Lubja 4 parklas 15. oktoobril 2022 korraldasime. 
-                                <br>
-  
-                                <br>
-                                Meie missiooniks on õppida meeskonnatöö korraldamist, inseneeria projekti läbiviimist, mehhanikat, elektroonikat, programmeerimist ja materjaliteadust. Kõike seda ja palju muud oleme me juba õppinud tänu elektriauto ehitamise väljakutse vastu võttes.</p>
+                              <h5 id="missioonPealkiri"><b></b></h5>
+                              <p id="missioonTekst"></p>
                           </div>
                         </div>
                     </div>
@@ -390,5 +382,6 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="translation.js"></script>
   </body>
 </html>
