@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,11 +13,11 @@
     />
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
-    <link href="carousel.js" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/logo_romb.png">
+    <script src="/src/translation.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
   </head>
   <body>
@@ -51,6 +51,17 @@
         </nav>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                1. hooaeg
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#esimene">Esimene proovisõit</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#teine">Teine proovisõit</a></li>
+                <li><hr class="dropdown-divider"></li>
+              </ul>
+            </li>
             <li class="nav-item">
               <a class="nav-link active" href="#missioon">Missioon</a>
             </li>
@@ -73,6 +84,7 @@
                 <li><a class="dropdown-item" href="#uudised">Uudised</a></li>
               </ul>
             </li>
+            <button id="toggle-lang">Switch to English</button>
           </ul>
         </div>
       </div>
@@ -90,8 +102,25 @@
         }
       });
     </script>
-    
-
+    <section id="teine">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-100 py-5">
+                <div class="row">
+                    <div class="col-12">
+                      <div class="info-box">
+                        <div class="ms-4">
+                          <h1>Teine proovisõit Põhjalas</h1>                  
+                          <p>Vanalinna Hariduskolleegiumi gümnaasiumi taseme tunniplaanist võib leida õppeaine MATIK, mis on lühend matemaatikast, teadusest, tehnoloogiast, inseneri valdkonnast ja kunstist. Lõppeval õppeaastal oli meie eesmärgiks elektriauto ehitamine. Meie juhendajaks oli hispaania päritolu tarkvara insener ja idufirma ettevõtja Javier Ortín Cervera. Allpool klipp meie pühapäevasest proovisõidust Koplis Põhjala tehase angaaris. Elektriauto ehitasid: Eva Kazakovskaia, Evert Härm, Rasmus Tuum, Julius Putrinš, Valter Luus, Paul Kask ja Anne-Riin Peep ning vastasmeeskond Üks Jupp. </p>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/WRla5KKQoS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>          
+    </section>
     
     <section id="missioon">
       <div class="container">
@@ -112,6 +141,7 @@
                                 <br>
                                 Meie missiooniks on õppida meeskonnatöö korraldamist, inseneeria projekti läbiviimist, mehhanikat, elektroonikat, programmeerimist ja materjaliteadust. Kõike seda ja palju muud oleme me juba õppinud tänu elektriauto ehitamise väljakutse vastu võttes.</p>
                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,7 +254,7 @@
         <div class="col-lg-4 col-md-8">
           <div class="team-member">
               <div class="image">
-                  <img id="eva" src="/img/valter.png" alt="" height=100% width=101%>
+                  <img id="eva" src="/img/valter.jpeg" alt="" height=100% width=71%>
                   <div class="overlay" id="eva-overlay">Minu peamiseks ülesandeks on disaini arendamine ja kujundamine. </div>
                   <div class="social-icons">
                     <a href="https://www.instagram.com/valterluus/"><img src="/img/bxl-instagram.svg" alt=""></a>
@@ -291,7 +321,7 @@
   <div class="lightbox-gallery">
       <div class="container">
           <div class="intro">
-              <h1 class="text-center">Pildid</h2>
+              <h1 class="text-center">Pildid</h1>
           </div>
           <div class="row photos">
               <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="/img/auto.jpg" data-lightbox="photos"><img class="img-fluid" src="/img/auto.jpg"></a></div>
@@ -306,41 +336,48 @@
     <div style="text-align: center;">
       <h1>Videod</h1>
       <iframe width="360" height="630" src="https://www.youtube.com/embed/eO7I39674oA" title="22. March 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="630" src="https://www.youtube.com/embed/UfZ2fv6pWsI" title="tiim mcqueeni proovisõit www.tiim-mcqueen.eu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
     </div>
   </section>
   <section id="uudised">
     <div style="text-align: center;">
-      <h1>Meist Tehtud Uudised</h1> 
+      <h1>Meist Tehtud Uudised</h1>
+      <h2><a href="https://pealinn.ee/2023/03/10/vanalinna-hariduskolleegiumi-noored-ehitavad-elektrisoidukeid-ja-unistavad-voistlustest/">Vanalinna hariduskolleegiumi noored ehitavad elektrisõidukeid ja unistavad võistlustest</a></h2> 
       <iframe width="100%" height="630" src="https://www.youtube.com/embed/GyUWX6lJIaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
     </div>
   </section>
   <footer>
     <div class="footer-top text-center">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <div class="logo"></div><img src="/img/logo_romb.png" alt="" width=300 height=300></div>
-                    <p>Võta meiega ühendust!</p>
-                    <div class="col-auto social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100091296935066"><img src="/img/bxl-facebook-square.svg" alt=""></i></a>
-                        <a href="https://www.instagram.com/tiim_mcqueen/"><img src="/img/bxl-instagram.svg" alt=""></i></a>
-                        <a href="https://www.tiktok.com/@tiimmqqueen"><img src="/img/bxl-tiktok.svg" alt=""></i></a>
-                    </div>
-                    <div class="sponsorid">
-                      <br>
-                      <p>Meie toetajad:</p>
-                      <a href="https://www.easyfeedback.com/en/"><img src="/img/easyFeedback_white.svg" alt="" class="easyLogo"></a>
-                      <a href="https://www.telia.ee/"><img src="/img/telia.png" alt="" width=15% height=50></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="logo"><img src="/img/logo_romb.png" alt="" width=300 height=300></div>
+            <p>Võta meiega ühendust!</p>
+            <div class="col-auto social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100091296935066"><img src="/img/bxl-facebook-square.svg" alt=""></a>
+                <a href="https://www.instagram.com/tiim_mcqueen/"><img src="/img/bxl-instagram.svg" alt=""></a>
+                <a href="https://www.tiktok.com/@tiimmqqueen"><img src="/img/bxl-tiktok.svg" alt=""></a>
+                
             </div>
+            <div class="maps">
+              <br>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.6030987999409!2d24.747147915659482!3d59.4396939092112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46929363e0a9651d%3A0xf17c383a79cf9ca9!2sUus%2019%2C%2010123%20Tallinn!5e0!3m2!1sen!2see!4v1680271306307!5m2!1sen!2see" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="sponsorid">
+              <br>
+              <p>Meie toetajad:</p>
+              <a href="https://www.easyfeedback.com/en/"><img src="/img/easyFeedback_white.svg" alt="" class="easyLogo"></a>
+              <a href="https://www.telia.ee/"><img src="/img/telia.png" alt="" width=27%></a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="footer-bottom text-center">
         <p class="mb-0">Copyright@2023. All rights Reserved</p>
     </div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   </body>
 </html>

@@ -8,7 +8,8 @@
 }
 
 .top-nav {
-    background-color: gray !important;
+    background: rgb(255,255,255);
+    background: linear-gradient(354deg, rgba(255,255,255,1) 0%, rgba(135,135,135,1) 0%, rgba(175,175,175,1) 100%);
     padding-top: 5x;
     padding-bottom: 5px;
     color: #090809;
@@ -95,6 +96,14 @@
     background: linear-gradient(349deg, rgba(255,255,255,1) 0%, rgba(131,0,0,1) 0%, rgba(245,0,0,1) 100%);
     color: rgb(255, 255, 255);
     font-size: large;
+}
+
+#teine {
+  font-family: "Roboto Mono", monospace;
+  background: rgb(255,255,255);
+  background: linear-gradient(357deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(215,215,215,1) 100%);color: rgb(255, 255, 255);
+  font-size: large;
+  color: black;
 }
 
 
@@ -193,13 +202,13 @@ footer .social-icons a {
    
 /* (B) POSITION CAPTION */
 .fullcap {
-    /* (B1) COVER OVER ENTIRE IMAGE */
-    position: absolute; top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-   
-    /* (B2) CENTER CONTENT */
-    display: flex; justify-content: center; align-items: center;
+  /* (B1) COVER OVER ENTIRE IMAGE */
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+ 
+  /* (B2) CENTER CONTENT */
+  display: flex; justify-content: center; align-items: center;
 }
 
 /* (C) ONLY SHOW CAPTION ON HOVER */
@@ -234,6 +243,16 @@ h6 {
     font-family: "Roboto Mono", monospace; 
 }
 
+#uudised a{
+  font-family: "Roboto Mono", monospace; 
+  color: black;
+  text-align: left !important;
+  font-size: x-large;
+}
+
+#uudised a:hover {
+  color: blue;
+}
 .lightbox-gallery{background-image: linear-gradient(#f9f9f9, #ffffff);background-repeat: no-repeat;color: #000;overflow-x: hidden}.lightbox-gallery p{color:#fff}.lightbox-gallery h2{font-weight:bold;margin-bottom:40px;padding-top:40px;color:#fff}@media (max-width:767px){.lightbox-gallery h2{margin-bottom:25px;padding-top:25px;font-size:24px}}.lightbox-gallery .intro{font-size:16px;max-width:500px;margin:0 auto 40px}.lightbox-gallery .intro p{margin-bottom:0}.lightbox-gallery .photos{padding-bottom:20px}.lightbox-gallery .item{padding-bottom:30px}
 
 
