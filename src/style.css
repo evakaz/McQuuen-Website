@@ -168,6 +168,7 @@ footer .social-icons a {
 }
 
 #pildid h1 {
+  font-family: "Roboto Mono", monospace;
     color: red !important;
 }
 
@@ -235,10 +236,15 @@ h6 {
     font-family: "Roboto Mono", monospace;
 }
 
-#pildid {
-    font-family: "Roboto Mono", monospace;
-}
+#pildid p{
+  font-family: "Roboto Mono", monospace;
+  color: black !important;
+  }
 
+
+.autor {
+  color: black !important;
+}
 #uudised {
     font-family: "Roboto Mono", monospace; 
 }
@@ -397,4 +403,7 @@ h6 {
   #eva:hover + #eva-overlay {
     display: block;
   }
+
+
+
 
