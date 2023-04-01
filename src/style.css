@@ -15,6 +15,9 @@
     color: #090809;
 }
 
+.top-nav .nabvar .dropdown-menu {white-space: normal;}
+
+
 .top-nav p {
     margin-bottom: 0;
     display: inline-block;
@@ -408,6 +411,20 @@ h6 {
     display: block;
   }
 
-
-
-
+  #language-toggle {
+    position: relative;
+    background: rgb(255,255,255);
+    background: linear-gradient(349deg, rgba(255,255,255,1) 0%, rgba(131,0,0,1) 0%, rgba(245,0,0,1) 100%);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    font-size: 12;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 80%;
+    height: 50%;
+    font-family: "Roboto Mono", monospace !important;
+  }
+  
+  #language-toggle:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
