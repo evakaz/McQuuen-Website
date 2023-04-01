@@ -55,9 +55,9 @@
                 1. hooaeg
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#esimene">Esimene proovisõit</a></li>
+                <li><a class="dropdown-item" href="#esimene">1. proovisõit</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#teine">Teine proovisõit</a></li>
+                <li><a class="dropdown-item" href="#teine">2. proovisõit</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -84,7 +84,7 @@
             </li>
           
           </ul>
-          <button id="language-toggle">
+          <button class="btn btn-primary btn-lg" id="language-toggle">
             Switch Language
           </button>
           <img id="flag" src="/img/estonian.png" width=5%>
@@ -133,7 +133,11 @@
                         <div class="info-box">
                           <div class="ms-4">
                               <h5 id="missioonPealkiri"><b></b></h5>
-                              <p id="missioonTekst"></p>
+                              <p id="missioonTekst1"></p>
+                              <br>
+                              <p id="missioonTekst2"></p>
+                              <br>
+                              <p id="missioonTekst3"></p>
                           </div>
                         </div>
                     </div>
@@ -147,7 +151,7 @@
           <div class="row">
               <div class="col-12">
                   <div class="intro"> 
-                      <h1 id="tiimiliikmed"></h1>
+                      <h1 id="teamMembers"></h1>
                       <p class="mx-auto"><p id="tiimitekst"></p></p>
                   </div>
               </div>
@@ -198,7 +202,7 @@
                 <div class="team-member">
                     <div class="image">
                         <img id="eva" src="/img/paul.jpg" alt="" height=85% width=85%>
-                        <div class="overlay" id="eva-overlay"><p id="paulKask"></p></div>
+                        <div class="overlay" id="eva-overlay"><p id="paulTekst"></p></div>
                         <div class="social-icons">
                           <a href="https://www.instagram.com/paul.kask/"><img src="/img/bxl-instagram.svg" alt=""></a>
                         </div>
@@ -213,7 +217,7 @@
                   <div class="image">
                     
                       <img id="eva" src="/img/ramus.jpg" alt="" height=85% width=85%>
-                      <div class="overlay" id="eva-overlay">rasmusTekst</div>
+                      <div class="overlay" id="eva-overlay"><p id="rasmusTekst"></p></div>
                       <div class="social-icons">
                           <a href="#"><i class='bx bxl-facebook'></i></a>
                           <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -289,16 +293,17 @@
                       <div class="info-box">
                           <img src="img/icon6.png" alt="">
                           <div class="ms-4">
-                              <h6>Hakka meie sponsoriks?</h6>
-                              <p>9–25-aastaste õpilaste meeskonnad üle maailma võistlevad Greenpoweri üritustel Ühendkuningriigis ja teistes riikides, sealhulgas USA-s, Hispaanias, Portugalis, Belgias ja Hiinas. Ka meie unistus on 2023. aasta suvel Ühendkuningriigis toimuvatele võistlustele jõuda. Aita meil saavutada see unistus!</p> <br>
-                              <h1>
-                              EE707700771003717302 <br>
-                              Mittetulundusühing MIIKAELI ÜHENDUS 
+                              <h6 id="sponsorPealkiri"></h6>
+                              <p id="sponsorTekst"></p>
+                              <br>
+                              <h1>EE707700771003717302
                               </h1>
+                            
+                              <h1>Mittetulundusühing MIIKAELI ÜHENDUS</h1>
                           </div>
                           <div class="sponsorid">
                             <br>
-                            <p>Meie toetajad:</p>
+                            <p id="toetajad"></p>
                             <a href="https://www.easyfeedback.com/en/"><img src="/img/easyFeedback_white.svg" alt="" class="easyLogo" width=25% height=20%></a>
                             <a href="https://www.telia.ee/"><img src="/img/telia.png" alt="" width=25% height=20%></a>
                           </div>
@@ -315,9 +320,11 @@
   <div class="lightbox-gallery">
       <div class="container">
           <div class="intro">
-              <h1 class="text-center">Pildid</h1>
-              <p class="auotor">Piltide autor: Aleksandr Gužov</p>
+            <br>
+            <h1 class="text-center fs-8" id="pictures"></h1>
           </div>
+          <p class="text-left fs-4" id="autor"></p>
+
           <div class="row photos">
               <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="/img/auto.jpg" data-lightbox="photos"><img class="img-fluid" src="/img/auto.jpg"></a></div>
               <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="/img/auto2.jpg" data-lightbox="photos"><img class="img-fluid" src="/img/auto2.jpg"></a></div>
@@ -337,9 +344,29 @@
         
     </div>
   </section>
+  <section id="esimene">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-100 py-5">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="info-box">
+                      <div class="ms-4">
+                        <h1 id="esimenePealkiri"></h1>                  
+                        <p id ="esimeneTekst1"></p> <br>
+                        <p id="esimeneTekst2"></p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WRla5KKQoS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>    
+  </section>
   <section id="videod">
     <div style="text-align: center;">
-      <h1>Videod</h1>
+      <b><h1 id="videos"></h1></b>
       <iframe width="360" height="630" src="https://www.youtube.com/embed/eO7I39674oA" title="22. March 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <iframe width="360" height="630" src="https://www.youtube.com/embed/UfZ2fv6pWsI" title="tiim mcqueeni proovisõit www.tiim-mcqueen.eu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       
@@ -347,7 +374,7 @@
   </section>
   <section id="uudised">
     <div style="text-align: center;">
-      <h1>Meist Tehtud Uudised</h1>
+      <h1 id="news"></h1>
       <a href="https://pealinn.ee/2023/03/10/vanalinna-hariduskolleegiumi-noored-ehitavad-elektrisoidukeid-ja-unistavad-voistlustest/"><img src="/img/uudis.png" alt="" width=></a>
       <iframe width="100%" height="630" src="https://www.youtube.com/embed/GyUWX6lJIaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
     </div>
@@ -358,7 +385,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
             <div class="logo"><img src="/img/logo_romb.png" alt="" width=300 height=300></div>
-            <p>Võta meiega ühendust!</p>
+            <p id="contact"></p>
             <div class="col-auto social-icons">
                 <a href="https://www.facebook.com/profile.php?id=100091296935066"><img src="/img/bxl-facebook-square.svg" alt=""></a>
                 <a href="https://www.instagram.com/tiim_mcqueen/"><img src="/img/bxl-instagram.svg" alt=""></a>
@@ -371,7 +398,7 @@
             </div>
             <div class="sponsorid">
               <br>
-              <p>Meie toetajad:</p>
+              <p id="toetajad"></p>
               <a href="https://www.easyfeedback.com/en/"><img src="/img/easyFeedback_white.svg" alt="" class="easyLogo"></a>
               <a href="https://www.telia.ee/"><img src="/img/telia.png" alt="" width=40%></a>
             </div>

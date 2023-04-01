@@ -41,6 +41,9 @@
   background-color: #F8F9FA !important;
 }
 
+#pictures {
+  font-weight: 900;
+}
 .social-icons a {
     width: 28px;
     height: 28px;
@@ -82,6 +85,8 @@
     background-color: rgba(90, 0, 0, 0);
 
 }
+
+
 
 #tiimiliikmed {
     background-color: white;
