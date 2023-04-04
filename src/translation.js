@@ -27,6 +27,16 @@ let videos = document.getElementById("videos");
 let esimenePealkiri = document.getElementById("esimenePealkiri");
 let esimeneTekst1 = document.getElementById("esimeneTekst1");
 let esimeneTekst2 = document.getElementById("esimeneTekst2");
+let eProovisoit = document.getElementById("1proovisoit");
+let tProovisoit = document.getElementById("2proovisoit");
+let hooaeg = document.getElementById("hooaeg");
+let missioon = document.getElementById("navMissioon");
+let navToetus = document.getElementById("navToetus");
+let navTiimiliikmed = document.getElementById("navTiimiliikmed");
+let navPildid = document.getElementById("navPildid");
+let navVideod = document.getElementById("navVideod");
+let navUudised = document.getElementById("navUudised");
+let navMaterjalid = document.getElementById("navMaterjalid");
 
 
 // Set up your translations as objects with key-value pairs
@@ -58,9 +68,18 @@ const translations = {
     videos: "Videod",
     pildid: "Pildid",
     esimenePealkiri: "Esimene Proovisõit",
-    esimeneTekst1: "22. oktoobril möödus Lubja 4 esimene proovisõit, mis näitas sõiduki potentsiaali. Kuigi proovisõit oli edukas, tõi see esile ka vajaduse edasise täiustamise järele.",
-    esimeneTekst2: "Vaatamata nendele parendusvaldkondadele oli esimene proovisõit oluline verstapost Lubja 4 sõiduki arendamisel. Jätkuvate testimiste ja täiustamisega oleme kindlad, et see täiustab jätkuvalt ja saavutab oma täieliku potentsiaali."
-  
+    esimeneTekst1: "22. oktoobril toimus Lubja 4 parklas meie esimene proovisõit, mis näitas nii sõiduki potentsiaali, kuid ka täiustamist vajavaid külgi, nagu gaasihooba kinnitus ja roolivõimendi puudusi.",
+    esimeneTekst2: "Esimene proovisõitoli  oluline verstapost meie elektriauto arendamisel mitte ainult andmete kogumise pärast, vaid ka motivatsioonist, mida auto sõitma saamine meie tiimliikmetele andis.  Vaja on vaid testimist, analüüsimist ja täiustamist jätkata, et auto oma täieliku potentsiaali saavutaks!",
+    eProovisoit: "1. proovisõit",
+    tProovisoit: "2. proovisõit",
+    hooaeg: "1. hooaeg",
+    missioon: "Missioon",
+    navToetus: "Aita meid eesmärgini jõuda!",
+    navTiimiliikmed: "Tiimiliikmed",
+    navPildid: "Pildid",
+    navUudised: "Uudised",
+    navVideod: "Videod" ,
+    navMaterjalid: "Materjalid"
   },
   english: {
     teineProovisoitPohjalas: "Second Test Drive in Põhjala",
@@ -90,7 +109,17 @@ const translations = {
     videos: "Videod",
     esimenePealkiri: "First Test Drive",
     esimeneTekst1: "On October 22nd, the first test drive at Lubja 4 went smoothly, showcasing the potential of the vehicle. However, while the test drive was successful, it also highlighted the need for further improvement.",
-    esimeneTekst2: "Despite these areas of improvement, the first test drive was an important milestone in the development of the vehicle at Lubja 4. With continued testing and refinement, we are confident that it will continue to improve and reach its full potential."
+    esimeneTekst2: "Despite these areas of improvement, the first test drive was an important milestone in the development of the vehicle at Lubja 4. With continued testing and refinement, we are confident that it will continue to improve and reach its full potential.",
+    eProovisoit: "1. test drive",
+    tProovisoit: "2. test drive",
+    hooaeg: "1. season",
+    missioon: "Mission",
+    navToetus: "Help us reach our goal!",
+    navTiimiliikmed: "Team members",
+    navPildid: "Pictures",
+    navUudised: "News",
+    navVideod: "Videos" ,
+    navMaterjalid: "Sources"
 }
 };
 
@@ -130,6 +159,17 @@ function toggleLanguage() {
     esimenePealkiri.textContent = translations.english.esimenePealkiri;
     esimeneTekst1.textContent = translations.english.esimeneTekst1;
     esimeneTekst2.textContent = translations.english.esimeneTekst2;
+    eProovisoit.textContent = translations.english.eProovisoit;
+    tProovisoit.textContent = translations.english.tProovisoit;
+    hooaeg.textContent = translations.english.hooaeg;
+    missioon.textContent = translations.english.missioon;
+    navToetus.textContent = translations.english.navToetus;
+    navTiimiliikmed.textContent = translations.english.navTiimiliikmed;
+    navPildid.textContent = translations.english.navPildid;
+    navUudised.textContent = translations.english.navUudised;
+    navVideod.textContent = translations.english.navVideod;
+    navMaterjalid.textContent = translations.english.navMaterjalid;
+    
 
 
 
@@ -164,6 +204,16 @@ function toggleLanguage() {
     esimenePealkiri.textContent = translations.estonian.esimenePealkiri;
     esimeneTekst1.textContent = translations.estonian.esimeneTekst1;
     esimeneTekst2.textContent = translations.estonian.esimeneTekst2;
+    eProovisoit.textContent = translations.estonian.eProovisoit;
+    tProovisoit.textContent = translations.estonian.tProovisoit;
+    hooaeg.textContent = translations.estonian.hooaeg;
+    missioon.textContent = translations.estonian.missioon;
+    navToetus.textContent = translations.estonian.navToetus;
+    navTiimiliikmed.textContent = translations.estonian.navTiimiliikmed;
+    navPildid.textContent = translations.estonian.navPildid;
+    navUudised.textContent = translations.estonian.navUudised;
+    navVideod.textContent = translations.estonian.navVideod;
+    navMaterjalid.textContent = translations.estonian.navMaterjalid;
   }
 }
 

@@ -52,34 +52,31 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                1. hooaeg
-              </a>
+                <p id="hooaeg"></p>              </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#esimene">1. proovisõit</a></li>
+                <li><a class="dropdown-item" href="#esimene"><p id="1proovisoit"></p></a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#teine">2. proovisõit</a></li>
+                <li><a class="dropdown-item" href="#teine"><p id="2proovisoit"></p></a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#missioon">Missioon</a>
+              <a class="nav-link active" href="#missioon"><p id="navMissioon"></p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#tiimiliikmed">Tiimiliikmed</a>
+              <a class="nav-link" href="#tiimiliikmed"><p id="navTiimiliikmed"></p></a>
             </li>
     
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#avaleht">Aita meid eesmärgini jõuda!</a>
+              <a class="nav-link" aria-current="page" href="#avaleht"><p id="navToetus"></p></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Materjalid
-              </a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><p id="navMaterjalid"></p>              </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#pildid">Pildid</a></li>
+                <li><a class="dropdown-item" href="#pildid"><p id="navPildid"></p></a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#videod">Videod</a></li>
+                <li><a class="dropdown-item" href="#videod"><p id="navVideod"></p></a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#uudised">Uudised</a></li>
+                <li><a class="dropdown-item" href="#uudised"><p id="navUudised"></p></a></li>
               </ul>
             </li>
           
@@ -124,7 +121,7 @@
       </div>          
     </section>
     
-    <section id="missioon">
+    <section id="misssioon">
       <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-100 py-5">
@@ -132,12 +129,14 @@
                     <div class="col-12">
                         <div class="info-box">
                           <div class="ms-4">
+                            <div class="tekstMissioon">
                               <h5 id="missioonPealkiri"><b></b></h5>
                               <p id="missioonTekst1"></p>
                               <br>
                               <p id="missioonTekst2"></p>
                               <br>
                               <p id="missioonTekst3"></p>
+                            </div>
                           </div>
                         </div>
                     </div>
@@ -355,7 +354,6 @@
                         <h1 id="esimenePealkiri"></h1>                  
                         <p id ="esimeneTekst1"></p> <br>
                         <p id="esimeneTekst2"></p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WRla5KKQoS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     </div>
                   </div>
@@ -373,9 +371,28 @@
     </div>
   </section>
   <section id="uudised">
-    <div style="text-align: center;">
+    <div class="text-center">
       <h1 id="news"></h1>
-      <a href="https://pealinn.ee/2023/03/10/vanalinna-hariduskolleegiumi-noored-ehitavad-elektrisoidukeid-ja-unistavad-voistlustest/"><img src="/img/uudis.png" alt="" width=></a>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <br>
+            <br>
+            <img src="/img/pealinn.png" alt="Avatar" style="width:300px;height:70px;">
+            <br>
+            <br>
+            <p>Vanalinna hariduskolleegiumi noored ehitavad elektrisõidukeid ja unistavad võistlustest</p>
+          </div>
+          <div class="flip-card-back">
+            <br>
+            <br>
+            <h1> Vanalinna hariduskolleegiumi noored ehitavad elektrisõidukeid ja unistavad võistlustest</h1>
+            <br>
+            <p>„See otseselt ei loe, palju teadmisi sul eelnevalt asja kohta on – tulemegi neid teadmisi ju tegevuse kaudu omandama ja õppima. Kõige tähtsam on<a>...loe edasi</a></p>
+          </div>
+        </div>
+      </div>
+      <br>
       <iframe width="100%" height="630" src="https://www.youtube.com/embed/GyUWX6lJIaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
     </div>
   </section>
