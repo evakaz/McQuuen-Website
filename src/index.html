@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="et">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81DDG0WYZ2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-81DDG0WYZ2');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -17,9 +26,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/logo_romb.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
     
   </head>
   <body>
+    <div class="loader"></div>
     <nav class="top-nav" id="home">
       <div class="container">
         <div class="row justify-content-between">
@@ -81,10 +93,7 @@
             </li>
           
           </ul>
-          <button class="btn btn-primary btn-lg" id="language-toggle">
-            Switch Language
-          </button>
-          <img id="flag" src="/img/estonian.png" width=5%>
+          <img id="flag" src="/img/estonian.png" width=5% alt="asdf" onclick=toggleLanguage()>
         </div>
       </div>
     </nav>
@@ -245,7 +254,7 @@
                 </div>
 
                 <h5>Juljus Putrinš</h5>
-                <p>Armastan Javieri.</p>
+                <p>Meeldib viimasel hetkel probleeme lahendada.                </p>
             </div>
         </div>
         <div class="col-lg-4 col-md-8">
@@ -275,8 +284,8 @@
                 
             </div>
 
-            <h5>Javier Ortin Cervera</h5>
-            <p>Õpetaja</p>
+            <h5>Javier Ortin</h5>
+            <p>Proovin innustada õpilasi väljakutseid vastu võtma ning ennast paremaks saada.</p>
         </div>
     </div>
     </div>
@@ -290,7 +299,6 @@
 
                   <div class="col-12">
                       <div class="info-box">
-                          <img src="img/icon6.png" alt="">
                           <div class="ms-4">
                               <h6 id="sponsorPealkiri"></h6>
                               <p id="sponsorTekst"></p>
@@ -305,6 +313,10 @@
                             <p id="toetajad"></p>
                             <a href="https://www.easyfeedback.com/en/"><img src="/img/easyFeedback_white.svg" alt="" class="easyLogo" width=25% height=20%></a>
                             <a href="https://www.telia.ee/"><img src="/img/telia.png" alt="" width=25% height=20%></a>
+
+                            <a href="https://autosoit.ee/"><img src="/img/autosoit.svg" alt="" class="easyLogo" width=25% height=20% fill="white"></a>
+
+                            <a href="https://tallinn.ee/"><img src="/img/Tallinn_logo_RGB.svg" alt="" class="easyLogo" width=25% height=20%></a>
                           </div>
                       </div>
                   </div>
@@ -343,6 +355,25 @@
         
     </div>
   </section>
+  <section id="kolvart">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-100 py-5">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="info-box">
+                      <div class="ms-4">
+                        <h1 id="kolvartPealkiri"></h1>                  
+                        <p id ="kolvartTekst"></p> <br>
+                        <img src="/img/kolvart.jpeg" width=30% height=50% alt="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>    
+  </section>
   <section id="esimene">
     <div class="container">
       <div class="row justify-content-center">
@@ -373,22 +404,93 @@
   <section id="uudised">
     <div class="text-center">
       <h1 id="news"></h1>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <br>
-            <br>
-            <img src="/img/pealinn.png" alt="Avatar" style="width:300px;height:70px;">
-            <br>
-            <br>
-            <p>Vanalinna hariduskolleegiumi noored ehitavad elektrisõidukeid ja unistavad võistlustest</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <br>
+                  <br>
+                  <img src="/img/pealinn.png" alt="Avatar" style="width:300px;height:70px;">
+                  <br>
+                  <br>
+                  <p>Vanalinna hariduskolleegiumi noored ehitavad elektrisõidukeid ja unistavad võistlustest</p>
+                </div>
+                <div class="flip-card-back">
+                  <br>
+                  <br>
+                  <h1> Vanalinna hariduskolleegiumi noored ehitavad elektrisõidukeid ja unistavad võistlustest</h1>
+                  <br>
+                  <p>„See otseselt ei loe, palju teadmisi sul eelnevalt asja kohta on – tulemegi neid teadmisi ju tegevuse kaudu omandama ja õppima. Kõige tähtsam on<a href="https://pealinn.ee/2023/03/10/vanalinna-hariduskolleegiumi-noored-ehitavad-elektrisoidukeid-ja-unistavad-voistlustest/">...loe edasi</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="flip-card-back">
-            <br>
-            <br>
-            <h1> Vanalinna hariduskolleegiumi noored ehitavad elektrisõidukeid ja unistavad võistlustest</h1>
-            <br>
-            <p>„See otseselt ei loe, palju teadmisi sul eelnevalt asja kohta on – tulemegi neid teadmisi ju tegevuse kaudu omandama ja õppima. Kõige tähtsam on<a>...loe edasi</a></p>
+          <div class="col-sm">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <br>
+                  <br>
+                  <img src="/img/elmar.png" alt="Avatar" style="width:300px;height:70px;">
+                  <br>
+                  <br>
+                  <p>Mõni minut muusikata: Üks noor mõte Juljus Putrinš Elektriauto ehitamisest</p>
+                </div>
+                <div class="flip-card-back">
+                  <br>
+                  <br>
+                  <h1> Imelise podcasti meie kõige noorema tiimi liikmega Juljusega saab kuulata...</h1>
+                  <br>
+                  <p><a href="https://elmar.pleier.ee/podcast/moni-minut-muusikata/156324">...siit</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <br>
+                  <img src="/img/terevisioon.jpeg" alt="Avatar" style="width:300px;height:250px;">
+                  <br>
+                  <p>Elektriauto õpilasralliks</p>
+                  <br>
+                  <br>
+                  
+                </div>
+                <div class="flip-card-back">
+                  <br>
+                  <br>
+                  <h1>Elektriauto õpilasralliks</h1>
+                  <br>
+                  <p>Tallinna Vanalinna Hariduskolleegiumi õpilased on valmis saanud eripärase elektriautoga, millega plaanitakse tulevikus ka rahvusvahelistest võistlustest osa võtta. Milline näeb välja kooliõpilaste ehitatud elektriauto ning kuidas täpsemalt see funktsioneerib, räägivad Paul ja Julius Tallinna Vanalinna Hariduskolleegiumist <a href="https://etv.err.ee/1609007327/elektriauto-opilasralliks">...siin</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <br>
+                  <br>
+                  <img src="/img/autogeenius.svg" alt="Avatar" style="width:400px;height:90px;">
+                  <br>
+                  <br>
+                  <p>Vanalinna kooli õpilased ehitavad elektriautosid ja plaanivad nendega võistlema minna</p>
+                </div>
+                <div class="flip-card-back">
+                  <br>
+                  <br>
+                  <h1>Vanalinna kooli õpilased ehitavad elektriautosid ja plaanivad nendega võistlema minna</h1>
+                  <br>
+                  <p>Tallinna Vanalinna Hariduskolleegiumi õpilased on viimase nelja kuu jooksul ehitanud valmis mitu Greenpoweri elektriautot. Ühe sellise auto ehitanud tiimi McQueen liige jagas meiega oma kogemust.
+                    “Ehitamise aeg on<a href="https://auto.geenius.ee/rubriik/uudis/vanalinna-kooli-opilased-ehitavad-elektriautosid-ja-plaanivad-nendega-voistlema-minna/">...loe edasi</a></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -416,8 +518,8 @@
             <div class="sponsorid">
               <br>
               <p id="toetajad"></p>
-              <a href="https://www.easyfeedback.com/en/"><img src="/img/easyFeedback_white.svg" alt="" class="easyLogo"></a>
-              <a href="https://www.telia.ee/"><img src="/img/telia.png" alt="" width=40%></a>
+              <a href="https://www.easyfeedback.com/en/"><img src="/img/easyFeedback_white.svg" alt="" class="easyLogo" width=43%></a>
+              <a href="https://www.telia.ee/"><img src="/img/telia.png" alt="" width=43%></a>
             </div>
           </div>
         </div>
@@ -429,5 +531,8 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="translation.js"></script>
+  <script>
+    ScrollReveal().reveal('.teine-proovisoit-pohjalas', { delay: 1000 });
+  </script>
   </body>
 </html>

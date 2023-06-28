@@ -42,8 +42,8 @@ let navMaterjalid = document.getElementById("navMaterjalid");
 // Set up your translations as objects with key-value pairs
 const translations = {
   estonian: {
-    teineProovisoitPohjalas: "Teine Proovisoit Põhjalas",
-    toggleText: "Switch to English",
+    teineProovisoitPohjalas: "Teine Proovisõit Põhjalas",
+    // toggleText: "Switch to English",
     teineProovisoitTekst: "Vanalinna Hariduskolleegiumi gümnaasiumi taseme tunniplaanist võib leida õppeaine MATIK, mis on lühend matemaatikast, teadusest, tehnoloogiast, inseneri valdkonnast ja kunstist. Lõppeval õppeaastal oli meie eesmärgiks elektriauto ehitamine. Meie juhendajaks oli hispaania päritolu tarkvara insener ja idufirma ettevõtja Javier Ortín Cervera. Allpool klipp meie pühapäevasest proovisõidust Koplis Põhjala tehase angaaris. Elektriauto ehitasid: Eva Kazakovskaia, Evert Härm, Rasmus Tuum, Juljus Putrinš, Valter Luus, Paul Kask ja Anne-Riin Peep ning vastasmeeskond Üks Jupp.",
     missioonPealkiri: "Elekter? Tulevik!",
     missioonTekst1: "Me oleme innovaatlised gümnasistid Vanalinna Hariduskolleegiumist. Meie tiim ja varasemad gümnasistid ehitasid Greenpower Education Trust raames elektriauto skeletist. ",
@@ -64,7 +64,7 @@ const translations = {
     toetajad: "Meie toetajad:",
     autor: "Piltide autor: Aleksandr Gužov",
     news: "Meist Tehtud Uudised",
-    contact: "Võta meie ühendust!",
+    contact: "Võta meiega ühendust!",
     videos: "Videod",
     pildid: "Pildid",
     esimenePealkiri: "Esimene Proovisõit",
@@ -74,7 +74,7 @@ const translations = {
     tProovisoit: "2. proovisõit",
     hooaeg: "1. hooaeg",
     missioon: "Missioon",
-    navToetus: "Aita meid eesmärgini jõuda!",
+    navToetus: "Aita meil eesmärgini jõuda!",
     navTiimiliikmed: "Tiimiliikmed",
     navPildid: "Pildid",
     navUudised: "Uudised",
@@ -84,7 +84,7 @@ const translations = {
   english: {
     teineProovisoitPohjalas: "Second Test Drive in Põhjala",
     teineProovisoitTekst: "There is a special course available for the high school students of Vanalinna Hariduskolleegium. It is called MATIK, which is an acronym for mathematics, science, technology, engineering and art. During this school year our task was building an electric car. Our instructor was a software engineer and startup entrepreneur of Spanish origins – Javier Ortin Cervera. Down below you can find a clip of one of our test drives, which took place in the Põhjatehas hangar in Kopli. The creators of the electric car are: Eva Kazakovskaia, Evert Härm, Rasmus Tuum, Juljus Putrinš, Valter Luus, Paul Kask and Anne-Riin Peep.",
-    toggleText: "Vaheta eesti keelde",
+    // toggleText: "Vaheta eesti keelde",
     missioonPealkiri: "Electricity? The future!",
     missioonTekst1: "We are innovative high schoolers from Vanalinna Hariduskolleegium. Our team and the students before us built an electric car from the skeleton up in association with the Greenpower Education Trust.",
     missioonTekst2: "We have high schoolers of all ages in our team and every single one of them helped in creating the car, with which we drove in our first ever test drive in the parking lot at Lubja 4 on the 15th of October 2022. ",
@@ -131,7 +131,7 @@ function toggleLanguage() {
   if (currentLanguage === "estonian") {
     teineProovisoitPohjalas.textContent = translations.english.teineProovisoitPohjalas;
     teineProovisoitTekst.textContent = translations.english.teineProovisoitTekst;
-    languageToggle.textContent = translations.english.toggleText;
+    // languageToggle.textContent = translations.english.toggleText;
     currentLanguage = "english";
     missioonPealkiri.textContent = translations.english.missioonPealkiri;
     missioonTekst1.textContent = translations.english.missioonTekst1;
@@ -175,7 +175,6 @@ function toggleLanguage() {
 
   } else {
     teineProovisoitPohjalas.textContent = translations.estonian.teineProovisoitPohjalas;
-    languageToggle.textContent = translations.estonian.toggleText;
     teineProovisoitTekst.textContent = translations.estonian.teineProovisoitTekst;
     currentLanguage = "estonian";
     missioonPealkiri.textContent = translations.estonian.missioonPealkiri;
@@ -222,5 +221,5 @@ toggleLanguage();
 toggleLanguage();
 
 // Add a click event listener to the language toggle button
-languageToggle.addEventListener("click", toggleLanguage);
+// languageToggle.addEventListener("click", toggleLanguage);
 
